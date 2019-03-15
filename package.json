@@ -11,5 +11,8 @@
     "package",
     "kanhaiyalalsingh",
     "kanhaiya15"
-  ]
+  ],
+  "dependencies": {
+    "lodash": "^4.17.11"
+  }
 }

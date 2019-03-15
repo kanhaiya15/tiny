@@ -1,4 +1,17 @@
-module.exports = function tiny(string) {
-  if (typeof string !== "string") throw new TypeError("Tiny wants a string!");
-  return string.replace(/\s/g, "");
-};
+
+const _ = require('lodash');
+
+module.exports = {
+  str2arr: (iString) => {
+    if(typeof iString !== 'string') {
+      throw Error('Input to this function must be String');
+    }
+    return _.split(iString, ' ');
+  },
+  trim: (iString) => {
+    if(typeof iString !== 'string') {
+      throw Error('Input to this function must be String');
+    }
+    return _.trim(iString);
+  }
+}
